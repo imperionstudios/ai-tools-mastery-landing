@@ -6,16 +6,17 @@ Landing pages for BlockseBlock's 4-week live AI cohort for non-coders.
 
 | File | What it is |
 | --- | --- |
-| `site/index.html` | Responsive / desktop-first landing page (1280px canvas, folds to mobile below 920px) |
-| `site/mobile.html` | Original mobile-first landing page (480px column) |
+| `docs/index.html` | Responsive / desktop-first landing page (1280px canvas, folds to mobile below 920px) |
+| `docs/mobile.html` | Original mobile-first landing page (480px column) |
 
-Both are **single self-contained HTML files** — no build step, no dependencies to install. Open them directly in a browser, or serve the `site/` folder.
+Both are **single self-contained HTML files** — no build step, no dependencies to install. Open them directly in a browser, or serve the `docs/` folder.
 
 ## Publish with GitHub Pages
 
-1. Push this repo to GitHub.
-2. Settings → Pages → Source: *Deploy from a branch* → branch `main`, folder `/site`.
-3. The desktop page is served at the root URL; the mobile version at `/mobile.html`.
+Already enabled: Settings → Pages → Source *Deploy from a branch*, branch `main`, folder `/docs`.
+The desktop page is served at the root URL; the mobile version at `/mobile.html`.
+
+Pages only serves from `/` or `/docs` on a branch — hence `docs/` rather than `site/`.
 
 `.nojekyll` is included so Pages serves the files as-is.
 
@@ -23,10 +24,10 @@ Both are **single self-contained HTML files** — no build step, no dependencies
 
 The pages are built from Design Component sources in the design project:
 
-- `AI Tools Mastery Landing Desktop.dc.html` → `site/index.html`
-- `AI Tools Mastery Landing.dc.html` → `site/mobile.html`
+- `AI Tools Mastery Landing Desktop.dc.html` → `docs/index.html`
+- `AI Tools Mastery Landing.dc.html` → `docs/mobile.html`
 
-Edit the source, re-bundle, and commit the regenerated files in `site/`. Editing the bundled HTML by hand is possible but will be overwritten on the next export.
+Edit the source, re-bundle, and commit the regenerated files in `docs/`. Editing the bundled HTML by hand is possible but will be overwritten on the next export.
 
 ## Before going live
 
